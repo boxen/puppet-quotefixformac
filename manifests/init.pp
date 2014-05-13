@@ -9,7 +9,7 @@ class quotefixformac(
   $zipurl = "https://github.com/robertklep/quotefixformac/releases/download/\
 v${version}/QuoteFix-v${version}.zip"
   $bundlesdir = "/Users/${::boxen_user}/Library/Mail/Bundles"
-  $zipfile = '/tmp/QuoteFix.zip'
+  $zipfile = "/tmp/QuoteFix-${version}.zip"
   $zipdest = "/tmp/QuoteFix-${version}"
 
   boxen::osx_defaults { 'Enable Mail.app plugin support':

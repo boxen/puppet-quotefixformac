@@ -32,7 +32,7 @@ describe "quotefixformac" do
   it do
     should contain_exec("quotefixformac-download").
       with({
-        :creates => "/tmp/QuoteFix.zip",
+        :creates => "/tmp/QuoteFix-1.zip",
       })
   end
 
