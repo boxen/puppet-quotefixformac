@@ -40,7 +40,6 @@ describe "quotefixformac" do
     should contain_exec("quotefixformac-extract").
       with({
         :creates => "/tmp/QuoteFix-1",
-        :refreshonly => true,
       }).
       that_requires("Exec[quotefixformac-download]")
   end

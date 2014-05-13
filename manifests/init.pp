@@ -38,8 +38,7 @@ v${version}/QuoteFix-v${version}.zip"
       command     => "/usr/bin/unzip -d '${zipdest}' '${zipfile}'",
       cwd         => '/tmp',
       require     => Exec['quotefixformac-download'],
-      creates     => $zipdest,
-      refreshonly => true;
+      creates     => $zipdest;
   }
 
   file { "${bundlesdir}/QuoteFix.mailbundle":
