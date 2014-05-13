@@ -32,7 +32,7 @@ v${version}/QuoteFix-v${version}.zip"
 
   exec {
     'quotefixformac-download':
-      command => "/usr/bin/curl -L ${zipurl} > '${zipfile}",
+      command => "/usr/bin/curl -L '${zipurl}' > '${zipfile}'",
       creates => $zipfile;
     'quotefixformac-extract':
       command     => "/usr/bin/unzip -d '${zipdest}' '${zipfile}'",
