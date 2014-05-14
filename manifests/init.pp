@@ -13,6 +13,7 @@ v${version}/QuoteFix-v${version}.zip"
   $zipdest = "/tmp/QuoteFix-${version}"
 
   boxen::osx_defaults { 'Enable Mail.app plugin support':
+    user   => $::boxen_user,
     domain => 'com.apple.mail',
     key    => 'EnableBundles',
     type   => 'bool',
@@ -20,6 +21,7 @@ v${version}/QuoteFix-v${version}.zip"
   }
 
   boxen::osx_defaults { 'Set Mail.app Bundle Compatibility Version':
+    user   => $::boxen_user,
     domain => 'com.apple.mail',
     key    => 'BundleCompatibilityVersion',
     type   => 'string',

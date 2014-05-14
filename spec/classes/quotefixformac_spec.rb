@@ -7,6 +7,7 @@ describe "quotefixformac" do
   it do
     should contain_boxen__osx_defaults("Enable Mail.app plugin support").
       with({
+      :user => "sr",
       :domain => "com.apple.mail",
       :key => "EnableBundles",
       :type => "bool",
@@ -17,6 +18,7 @@ describe "quotefixformac" do
   it do
     should contain_boxen__osx_defaults("Set Mail.app Bundle Compatibility Version").
       with({
+	:user => "sr",
         :domain => "com.apple.mail",
         :key => "BundleCompatibilityVersion",
         :type => "string",
