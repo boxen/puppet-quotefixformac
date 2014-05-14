@@ -51,7 +51,6 @@ describe "quotefixformac" do
       with({
         :ensure => "present",
         :source => "/tmp/QuoteFix-1/QuoteFix.mailbundle",
-        :replace => true,
       }).
       that_requires("Exec[quotefixformac-extract]")
   end
