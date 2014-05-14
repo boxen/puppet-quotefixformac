@@ -1,7 +1,9 @@
 # QuoteFix Puppet Module for Boxen
 
-Install the QuoteFix plugin for Apple Mail. See [qfm][] for details.
+Install the QuoteFix plugin to enable [bottom posting][bp] in Apple Mail.
+See [Quote Fix][qfm] for details.
 
+[bp]: http://catb.org/jargon/html/B/bottom-post.html
 [qfm]: https://github.com/robertklep/quotefixformac for details.
 
 [![Build Status](https://travis-ci.org/sr/puppet-quotefixformac.png?branch=master)](https://travis-ci.org/sr/puppet-quotefixformac)
