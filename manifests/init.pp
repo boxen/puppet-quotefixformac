@@ -47,5 +47,6 @@ v${version}/QuoteFix-v${version}.zip"
     source  => "${zipdest}/QuoteFix.mailbundle",
     replace => true,
     require => Exec['quotefixformac-extract'],
+    backup  => false,
   }
 }
