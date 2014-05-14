@@ -43,6 +43,7 @@ v${version}/QuoteFix-v${version}.zip"
 
   file { "${bundlesdir}/QuoteFix.mailbundle":
     ensure  => present,
+    recurse => true,
     source  => "${zipdest}/QuoteFix.mailbundle",
     replace => true,
     require => Exec['quotefixformac-extract'],
