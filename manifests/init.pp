@@ -43,9 +43,10 @@ v${version}/QuoteFix-v${version}.zip"
 
   file { "${bundlesdir}/QuoteFix.mailbundle":
     ensure  => present,
-    recurse => true,
     source  => "${zipdest}/QuoteFix.mailbundle",
+    recurse => true,
     replace => true,
+    ignore  => "*.pyc",
     require => Exec['quotefixformac-extract'],
     backup  => false,
   }
