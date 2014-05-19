@@ -6,7 +6,7 @@ See [Quote Fix][qfm] for details.
 [bp]: http://catb.org/jargon/html/B/bottom-post.html
 [qfm]: https://github.com/robertklep/quotefixformac
 
-[![Build Status](https://travis-ci.org/sr/puppet-quotefixformac.png?branch=master)](https://travis-ci.org/sr/puppet-quotefixformac)
+[![Build Status](https://travis-ci.org/boxen/puppet-quotefixformac.png?branch=master)](https://travis-ci.org/boxen/puppet-quotefixformac)
 
 ## Usage
 
