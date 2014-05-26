@@ -4,7 +4,7 @@
 #
 #   include quotefixformac
 class quotefixformac(
-  $version = '2.5.3'
+  $version = '2.5.4'
 ) {
   $zipurl = "https://github.com/robertklep/quotefixformac/releases/download/\
 v${version}/QuoteFix-v${version}.zip"
